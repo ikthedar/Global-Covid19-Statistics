@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>কোভিড-১৯ ট্র্যাকার | Ikthedar</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+<div class="preloader">
+  <div class="preloader__content">
+    <div class="preloader__loader"></div>
+    <div class="preloader__txt">Loading ...</div>
+  </div>
+</div>
+<div class="container">
+  <div class="statistics">
+    <div class="global">
+      <div class="global__title">
+        কোভিড-১৯ ট্র্যাকার 
+      </div>
+      <div class="global__cases">
+        <h1></h1>
+        <h2>সর্বমোট আক্রান্ত</h2>
+      </div>
+      <div class="global__deaths">
+        <h1></h1>
+        <h2>সর্বমোট মৃত্যু</h2>
+      </div>
+      <div class="global__recovered">
+        <h1></h1>
+        <h2>সর্বমোট সুস্থ</h2>
+      </div>
+    </div>
+    <input type="text" id="search" name="country" placeholder="ইংরেজিতে দেশের নাম">
+    <select class="custom-select" id="select" onchange="changeOrder()">
+      <option selected="" disabled="">ক্রমানুসার</option>
+      <option value="cases">সর্বমোট আক্রান্ত</option>
+      <option value="deaths">সর্বমোট মৃত্যু</option>
+      <option value="recovered">সর্বমোট সুস্থ</option>
+    </select>
+    <table class="table">
+      <thead>
+        <tr>
+          <th>দেশ</th>
+          <th>আক্রান্ত</th>
+          <th>মৃত্যু</th>
+          <th>সুস্থ</th>
+        </tr>
+      </thead>
+      <tbody>
+      </tbody>
+    </table>
+  </div>
+  <div class="arrow">
+    <div class="arrow__up">
+    </div>
+    <div class="arrow__down">
+    </div>
+  </div>
+</div>
+
+  <script src='https://cdn.jsdelivr.net/npm/es6-promise@4/dist/es6-promise.min.js'></script>
+<script src='https://cdn.jsdelivr.net/npm/es6-promise@4/dist/es6-promise.auto.min.js'></script>
+<script src='https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/iamdustan-smoothscroll/0.4.0/smoothscroll.min.js'></script>
+<script  src="function.js"></script>
+
+</body>
+</html>
